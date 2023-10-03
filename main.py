@@ -45,7 +45,7 @@ def add_account():
         message=f'These are the details entered: \nEmail: {email}\nPassword: {password}\n\n OK to save?')
 
         if details_correct:
-            with open('Python/100 Days of Code/Day 29 Password Manager/password_data.txt', mode='a') as data_file:
+            with open('password_data.txt', mode='a') as data_file:
                 data_file.write(f'{website} | {email} | {password}\n')
                 website_input.delete(0, END)
                 password_input.delete(0, END)
@@ -57,7 +57,7 @@ window.title('Personal Password Manager')
 window.config(padx=40, pady=40)
 
 canvas = Canvas(width=200, height=200)
-bg_image = PhotoImage(file='Python/100 Days of Code/Day 29 Password Manager/logo.png')
+bg_image = PhotoImage(file='logo.png')
 canvas.create_image(100, 100, image=bg_image)
 canvas.grid(column=1, row=0)
 
