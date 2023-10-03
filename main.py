@@ -1,9 +1,18 @@
+# File: main.py
+# Author: Ronaldo R Baker
+# Date: Last modified 03 OCT 2023
+# Description:
+# This GUI application allows the user to manage their account passwords by entering an email/username and password
+# into the entry boxes and saving to a text file. The user also has the ability to prepopulate the email entry with
+# a common used email, and also generate a password if they cannot think of one themselves.
+
+
 from tkinter import *
 from tkinter import messagebox
 import random
 import pyperclip
 
-PERSONAL_EMAIL = "r.remario.baker@gmail.com"
+PERSONAL_EMAIL = "default_user@gmail.com"
 LETTERS = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 
            'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 
            'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 
