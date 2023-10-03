@@ -4,7 +4,8 @@
 # Description:
 # This GUI application allows the user to manage their account passwords by entering an email/username and password
 # into the entry boxes and saving to a text file. The user also has the ability to prepopulate the email entry with
-# a common used email, and also generate a password if they cannot think of one themselves.
+# a common used email, and also generate a password if they cannot think of one themselves.This generated password 
+# is automatically copied to the clipboard for further use.
 
 
 from tkinter import *
